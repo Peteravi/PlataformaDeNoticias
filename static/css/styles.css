@@ -1,0 +1,235 @@
+:root {
+    --primary-color: #2c3e50;       /* Azul oscuro profesional */
+    --secondary-color: #34495e;     /* Azul medio */
+    --accent-color: #3498db;        /* Azul brillante para acentos */
+    --light-color: #ecf0f1;         /* Fondo claro */
+    --dark-color: #2c3e50;          /* Texto oscuro */
+    --success-color: #27ae60;       /* Verde */
+    --warning-color: #f39c12;       /* Amarillo/naranja */
+    --danger-color: #e74c3c;        /* Rojo */
+    --text-color: #333;             /* Color de texto principal */
+    --text-light: #7f8c8d;          /* Texto secundario */
+    --border-color: #dfe6e9;        /* Bordes sutiles */
+}
+/* Estilos Base */
+body {
+    font-family: 'Roboto', 'Segoe UI', sans-serif;
+    line-height: 1.7;
+    color: var(--text-color);
+    background-color: var(--light-color);
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Tipografía Mejorada */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: var(--dark-color);
+}
+
+/* Barra de Navegación Profesional */
+.navbar {
+    background-color: var(--primary-color) !important;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    padding: 0.8rem 1rem;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    font-size: 1.3rem;
+}
+
+.nav-link {
+    font-weight: 500;
+    padding: 0.5rem 1rem !important;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    color: rgba(255, 255, 255, 0.9) !important;
+}
+
+.dropdown-menu {
+    border: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Tarjetas de Noticias Mejoradas */
+.news-card {
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    margin-bottom: 25px;
+    background: white;
+}
+
+.news-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
+}
+
+.news-card img {
+    height: 220px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.news-card:hover img {
+    transform: scale(1.05);
+}
+
+.news-card .card-body {
+    padding: 1.5rem;
+}
+
+.news-card .card-title {
+    font-weight: 600;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    line-height: 1.4;
+    color: var(--primary-color);
+}
+
+.news-card .card-text {
+    color: var(--text-light);
+    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.news-card .badge {
+    font-weight: 500;
+    padding: 5px 10px;
+    background-color: var(--accent-color);
+    letter-spacing: 0.5px;
+    font-size: 0.75rem;
+}
+
+/* Botones Mejorados */
+.btn-outline-primary {
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+    transition: all 0.3s ease;
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--accent-color);
+    color: white;
+}
+
+/* Footer Profesional */
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 3rem 0;
+    margin-top: 4rem;
+}
+
+footer h5 {
+    color: white;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+footer p {
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 0.5rem;
+}
+
+footer a {
+    color: rgba(255, 255, 255, 0.8);
+    transition: color 0.3s ease;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+footer hr {
+    border-color: rgba(255, 255, 255, 0.1);
+    margin: 2rem 0;
+}
+
+/* Paginación Mejorada */
+.pagination {
+    margin-top: 3rem;
+}
+
+.page-item.active .page-link {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+}
+
+.page-link {
+    color: var(--accent-color);
+    border: 1px solid var(--border-color);
+    margin: 0 5px;
+    border-radius: 6px !important;
+    min-width: 40px;
+    text-align: center;
+}
+
+.page-link:hover {
+    color: var(--primary-color);
+    background-color: var(--light-color);
+}
+
+/* Efectos de Transición Suaves */
+a, button, .form-control {
+    transition: all 0.3s ease;
+}
+
+/* Responsive Design Mejorado */
+@media (max-width: 992px) {
+    .news-card {
+        margin-bottom: 20px;
+    }
+    
+    .news-card img {
+        height: 180px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 1.1rem;
+    }
+    
+    .news-card .card-title {
+        font-size: 1rem;
+    }
+    
+    .news-card .card-text {
+        font-size: 0.85rem;
+    }
+    
+    footer {
+        text-align: center;
+    }
+    
+    footer .text-md-end {
+        text-align: center !important;
+        margin-top: 2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .news-card img {
+        height: 160px;
+    }
+    
+    .news-card .card-body {
+        padding: 1rem;
+    }
+}
